@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xrm.Sdk;
 using System;
+using Technosoft.Yana.XRM.AI.LDMSService.Entities;
 
 namespace SimpleFetch
 {
@@ -17,7 +18,7 @@ namespace SimpleFetch
         {
             var fetchXML = string.Format(
             @"
-            <fetch top='1' >
+            <fetch>
                 <entity name='xts_newvehicledeliveryorder' >
                 <attribute name='xjp_billtocustomerid' alias='CustId' />
                 <attribute name='xts_newvehicledeliveryordernumber' alias='NVDONo' />
@@ -40,9 +41,10 @@ namespace SimpleFetch
                 {
                     if (entity.Attributes.Contains("Dim5From"))
                     {
-                        Console.WriteLine(entity.FormattedValues["CustNo"]);
+                        Console.WriteLine(((AliasedValue)entity["CustNo"]).Value);
+                        Console.WriteLine(entity.FormattedValues["CustId"]);
+                        Console.WriteLine(entity.FormattedValues["Dim5Id"]);
                         Console.WriteLine(entity.FormattedValues["Dim5From"]);
-                        Console.WriteLine(entity.FormattedValues["CustClass"]);
                         Console.WriteLine();
                     }
                 }

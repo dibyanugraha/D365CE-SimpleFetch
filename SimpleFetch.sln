@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFetch", "SimpleFetch\SimpleFetch.csproj", "{7EACAC4E-90AA-41A7-B626-7A9C086FBDBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmLib", "CrmLib\CrmLib.csproj", "{4BDE0B36-BE2E-4C27-A7B1-A93C491926C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{7EACAC4E-90AA-41A7-B626-7A9C086FBDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EACAC4E-90AA-41A7-B626-7A9C086FBDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EACAC4E-90AA-41A7-B626-7A9C086FBDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDE0B36-BE2E-4C27-A7B1-A93C491926C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDE0B36-BE2E-4C27-A7B1-A93C491926C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDE0B36-BE2E-4C27-A7B1-A93C491926C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDE0B36-BE2E-4C27-A7B1-A93C491926C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C406AAFE-DD1C-4A86-A3E9-734C00DE8BE2}
 	EndGlobalSection
 EndGlobal
